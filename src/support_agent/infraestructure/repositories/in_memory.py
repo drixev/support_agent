@@ -32,3 +32,6 @@ class InMemoryTicketRepository: # cumple TicketRepository sin heredar
         )
         
         return list(islice(matches, limit))
+
+    async def save(self, ticket:Ticket) -> None:
+        self._tickets[ticket.id] = ticket

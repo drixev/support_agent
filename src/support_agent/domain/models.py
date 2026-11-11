@@ -21,4 +21,10 @@ class Ticket(BaseModel):
     status: TicketStatus = TicketStatus.OPEN
     created_at: datetime = Field(default_factory=lambda: datetime.now(UTC))
     
+ALLOWED_TRANSITIONS:  dict[TicketStatus, frozenset[TicketStatus]] = {
+    TicketStatus.OPEN: frozenset({TicketStatus.IN_PROGRESS, TicketStatus.CLOSED}),
+    TicketStatus.IN_PROGRESS: frozenset({TicketStatus.RESOLVED,TicketStatus.OPEN }),
+    TicketStatus.RESOLVED: frozenset({TicketStatus.CLOSED, TicketStatus.IN_PROGRESS}),
+    TicketStatus.CLOSED: frozenset()
+}
 
