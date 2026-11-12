@@ -11,7 +11,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from support_agent.application.ticket_service import TicketService
 from support_agent.domain.models import TICKET_ID_PATTERN, Ticket, TicketStatus
-from support_agent.infraestructure.repositories.in_memory import InMemoryTicketRepository
+from support_agent.infrastructure.repositories.in_memory import InMemoryTicketRepository
 
 # stdio: stdio es el canal JSON-RPC -> logs SOLO a stderr
 

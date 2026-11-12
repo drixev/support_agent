@@ -6,8 +6,8 @@ from fastapi.responses import JSONResponse
 
 from support_agent.api.routes import health, tickets
 from support_agent.config import get_settings
-from support_agent.domain.errros import TicketNotFoundError
-from support_agent.infraestructure.repositories.in_memory import InMemoryTicketRepository
+from support_agent.domain.errors import TicketNotFoundError
+from support_agent.infrastructure.repositories.in_memory import InMemoryTicketRepository
 
 
 @asynccontextmanager

@@ -1,4 +1,4 @@
-from support_agent.domain.errros import InvalidStatusTransitionError, TicketNotFoundError
+from support_agent.domain.errors import InvalidStatusTransitionError, TicketNotFoundError
 from support_agent.domain.models import ALLOWED_TRANSITIONS, Ticket, TicketStatus
 from support_agent.domain.ports import TicketRepository
 

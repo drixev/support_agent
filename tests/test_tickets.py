@@ -3,7 +3,7 @@ from httpx import ASGITransport, AsyncClient
 
 from support_agent.api.dependencies import get_ticket_service
 from support_agent.application.ticket_service import TicketService
-from support_agent.infraestructure.repositories.in_memory import InMemoryTicketRepository
+from support_agent.infrastructure.repositories.in_memory import InMemoryTicketRepository
 from support_agent.main import create_app
 
 

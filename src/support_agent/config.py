@@ -9,7 +9,7 @@ class Settings(BaseSettings):
     
     env: Literal["local","dev","staging","prod"] = "local"
     log_level: str = "INFO"
-    llm_provider: Literal["ollama","antrhopic","openai","bedrock"] = "ollama"
+    llm_provider: Literal["ollama","anthropic","openai","bedrock"] = "ollama"
     llm_model: str = "llama3.1:8b"
     
 @lru_cache # singleton
