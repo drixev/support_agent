@@ -11,6 +11,9 @@ class Settings(BaseSettings):
     log_level: str = "INFO"
     llm_provider: Literal["ollama","anthropic","openai","bedrock"] = "ollama"
     llm_model: str = "llama3.1:8b"
+    qdrant_url: str = "http://localhost:6333"
+    qdrant_collection: str = "docs"
+    embedding_model: str = "BAAI/bge-small-en-v1.5"
     
 @lru_cache # singleton
 def get_settings() -> Settings:

@@ -7,3 +7,10 @@ services:
       test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
       interval: 10s
       retries: 3
+  qdrant:
+    image: qdrant/qdrant:v1.12.4 # fija versión; actualiza a la última estable
+    ports: ["6333:6333"]
+    volumes: ["qdrant_data:/qdrant/storage"]
+
+volumes:
+  qdrant_data:

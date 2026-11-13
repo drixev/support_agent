@@ -1,0 +1,6 @@
+{"query": "ERR_QUOTA_EXCEEDED", "relevant": ["rate-limits.md"]}
+{"query": "ERR_TICKET_LOCKED", "relevant": ["errors.md"]}
+{"query": "how long is an access token valid?", "relevant": ["auth.md"]}
+{"query": "where do I generate a key for the API?", "relevant": ["auth.md"]}
+{"query": "my app is sending too many calls, what happens?", "relevant": ["rate-limits.md"]}
+{"query": "my webhook server is slow, will I lose events?", "relevant": ["errors.md"]}

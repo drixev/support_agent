@@ -7,7 +7,10 @@ dependencies = [
     "uvicorn[standard]>=0.30",
     "pydantic>=2.8",
     "pydantic-settings>=2.4",
-    "mcp>=1.12,<2" # runtime: el SDK y el servidor
+    "mcp>=1.12,<2",              # runtime: el SDK y el servidor,
+    "qdrant-client>=1.12",
+    "fastembed>=0.4",           # embeddings locales ONNX, sin torch, gratis
+    "rank-bm25>=0.2.2"
 ]
 
 [project.optional-dependencies]
